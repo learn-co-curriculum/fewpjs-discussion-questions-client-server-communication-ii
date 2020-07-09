@@ -1,4 +1,4 @@
-# Client-Server Communication Discussion Questions
+# Discussion Questions: Client-Server Communication
 
 ## Objectives
 
