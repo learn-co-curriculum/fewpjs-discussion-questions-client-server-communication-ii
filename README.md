@@ -7,7 +7,8 @@
 
 ## Exercise
 
-Take a look at each of the code samples below. Each example will show you some code, as well as either the return value of what is logged to the console.
+Take a look at each of the code samples below. Each example will show you some
+code, as well as either the return value of what is logged to the console.
 
 1. How does this piece of code work?
 2. Why does the code do what it does?
@@ -43,7 +44,8 @@ fetch(url)
 
 ### Bonus
 
-How would you implement a function called `getJSON` so that the below code works as outlined?
+How would you implement a function called `getJSON` so that the below code works
+as outlined?
 
 ```javascript
 const url = "https://data.cityofnewyork.us/api/views/p94q-8hxh" // CityBike Data from data.gov
