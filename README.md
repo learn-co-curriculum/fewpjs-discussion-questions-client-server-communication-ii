@@ -7,39 +7,51 @@
 
 ## Exercise
 
-Take a look at each of the code samples below. Each example will show you some
-code, as well as either the return value of what is logged to the console.
+Each of the following code samples accesses an API with CityBike data from
+data.gov. Take a look at each sample and answer the associated question(s).
 
-1. How does this piece of code work?
-2. Why does the code do what it does?
-3. Given this code sample, what can you learn or describe about JavaScript
+To run the code samples yourself, open the browser DevTools and copy/paste the
+code into the console.
 
 ### Example 1
 
-```javascript
-const url = "https://data.cityofnewyork.us/api/views/p94q-8hxh" // CityBike Data from data.gov
-const data = fetch(url)
+Why does the following code snippet result in the error shown below? How can we
+fix it?
 
-console.log(data) // Promise {<pending>}
+```javascript
+const url = "https://data.cityofnewyork.us/api/views/p94q-8hxh"
+fetch(url).then(console.log)
+/*
+Refused to connect to 'https://data.cityofnewyork.us/api/views/p94q-8hxh' because it violates the document's Content Security Policy.
+Promise {<rejected>: TypeError: Failed to fetch
+    at <anonymous>:2:1}
+Uncaught (in promise) TypeError: Failed to fetch
+    at <anonymous>:2:1
+*/
 ```
 
 ### Example 2
 
+What will be logged by the following code? Why?
+
 ```javascript
-const url = "https://data.cityofnewyork.us/api/views/p94q-8hxh" // CityBike Data from data.gov
-fetch(url).then(console.log)
-// Response {type: "cors", url: "https://data.cityofnewyork.us/api/views/p94q-8hxh", redirected: false, status: 200, ok: true, …}
+const url = "https://data.cityofnewyork.us/api/views/p94q-8hxh"
+const data = fetch(url)
+
+console.log(data)
 ```
 
 ### Example 3
 
+What will be logged by the following code? Describe in your own words what's
+happening in each line of code.
+
 ```javascript
-const url = "https://data.cityofnewyork.us/api/views/p94q-8hxh" // CityBike Data from data.gov
+const url = "https://data.cityofnewyork.us/api/views/p94q-8hxh"
 fetch(url)
   .then(function(response){
     return response.json()
   }).then(console.log)
-// {id: "p94q-8hxh", name: "Citi Bike Live Station Feed (JSON)", attribution: "CitiBike", attributionLink: "http://citibikenyc.com/stations/json", averageRating: 0, …}```
 ```
 
 ### Bonus
