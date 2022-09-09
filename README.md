@@ -8,7 +8,9 @@
 ## Exercise
 
 Take a look at each of the code samples below. Each example will show you some
-code, as well as either the return value of what is logged to the console.
+code, as well as either the return value or what is logged to the console.
+
+To run the examples, open up your DevTools and use the console.
 
 1. How does this piece of code work?
 2. Why does the code do what it does?
